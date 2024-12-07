@@ -228,20 +228,6 @@
     sprite: Objects/Tools/rolling_pin.rsi
     state: icon
 
-- type: constructionGraph
-  id: ClothingNeckCloakGoliathCloak
-  start: start
-  graph:
-  - node: start
-    edges:
-    - to: cloak
-      steps:
-      - material: GoliathHide
-        amount: 3
-        doAfter: 2
-  - node: cloak
-    entity: ClothingNeckCloakGoliathCloak
-
 - type: construction
   name: goliath cloak
   id: ClothingNeckCloakGoliathCloak
