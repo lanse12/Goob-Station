@@ -234,7 +234,7 @@
       task: SimpleRangedHostileCompound
     blackboard:
       VisionRadius: !type:Single
-        4
+        6
       AggroVisionRadius: !type:Single
         8
   - type: Butcherable
