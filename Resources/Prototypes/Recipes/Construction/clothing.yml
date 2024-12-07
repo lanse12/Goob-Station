@@ -130,20 +130,6 @@
   icon: { sprite: Clothing/Head/Helmets/justice.rsi, state: icon }
   objectType: Item
 
-- type: constructionGraph
-  id: ClothingNeckCloakGoliathCloak
-  start: start
-  graph:
-  - node: start
-    edges:
-    - to: cloak
-      steps:
-      - material: GoliathHide
-        amount: 3
-        doAfter: 2
-  - node: cloak
-    entity: ClothingNeckCloakGoliathCloak
-
 - type: construction
   name: goliath cloak
   id: ClothingNeckCloakGoliathCloak
