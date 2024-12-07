@@ -167,6 +167,9 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: Construction
+    graph: GoliathCloak
+    node: goliath_cloak
 
 - type: entity
   parent: ClothingNeckBase
