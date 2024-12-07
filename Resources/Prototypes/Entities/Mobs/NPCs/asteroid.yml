@@ -50,22 +50,22 @@
       Dead:
         Base: goliath_dead
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2.50
-    baseSprintSpeed : 2.50
+    baseWalkSpeed : 0.75
+    baseSprintSpeed : 0.75
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      250: Dead
   - type: MeleeWeapon
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
     angle: 0
-    attackRate: 0.75
+    attackRate: 0.40
     animation: WeaponArcPunch
     damage:
       types:
         Slash: 15
-        Piercing: 10
+        Blunt: 30
   - type: NpcFactionMember
     factions:
     - SimpleHostile
@@ -76,7 +76,7 @@
       VisionRadius: !type:Single
         6
       AggroVisionRadius: !type:Single
-        10
+        8
   - type: NPCUseActionOnTarget
     actionId: ActionGoliathTentacle
   - type: Tag
@@ -90,6 +90,7 @@
     - id: FoodMeatGoliath
       amount: 3
     - id: MaterialGoliathHide1
+      amount: 2
 
 - type: entity
   id: ActionGoliathTentacle
@@ -108,7 +109,7 @@
       path: "/Audio/Weapons/slash.ogg"
     event: !type:GoliathSummonTentacleAction
     useDelay: 8
-    range: 10
+    range: 5
 
 - type: entity
   id: GoliathTentacle
@@ -200,8 +201,8 @@
       Dead:
         Base: hivelord_dead
   - type: MovementSpeedModifier
-    baseWalkSpeed : 3.5
-    baseSprintSpeed : 4.0
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2.5
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -233,9 +234,9 @@
       task: SimpleRangedHostileCompound
     blackboard:
       VisionRadius: !type:Single
-        4
+        3
       AggroVisionRadius: !type:Single
-        9
+        7
   - type: Butcherable
     spawned:
     - id: FoodHivelordRemains
@@ -266,7 +267,7 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Slash: 7
+        Slash: 4
   - type: Ammo
     muzzleFlash: null
   - type: Destructible
@@ -285,11 +286,11 @@
       task: SimpleHostileCompound
     blackboard: # highly aggressive
       VisionRadius: !type:Single
-        15
+        12
       AggroVisionRadius: !type:Single
-        15
+        12
   - type: TimedDespawn
-    lifetime: 100
+    lifetime: 30
 
 - type: entity
   id: FoodHivelordRemains
@@ -310,7 +311,7 @@
   - type: Item
     size: Normal
   - type: Perishable
-    rotAfter: 120 # rot after 2 minutes
+    rotAfter: 360 # rot after 6 minutes
     molsPerSecondPerUnitMass: 0
     forceRotProgression: true
   - type: RotInto
