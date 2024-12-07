@@ -50,8 +50,8 @@
       Dead:
         Base: goliath_dead
   - type: MovementSpeedModifier
-    baseWalkSpeed : 0.75
-    baseSprintSpeed : 0.75
+    baseWalkSpeed : 1.50
+    baseSprintSpeed : 1.50
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -65,7 +65,7 @@
     damage:
       types:
         Slash: 15
-        Blunt: 30
+        Blunt: 35
   - type: NpcFactionMember
     factions:
     - SimpleHostile
@@ -108,8 +108,8 @@
     sound:
       path: "/Audio/Weapons/slash.ogg"
     event: !type:GoliathSummonTentacleAction
-    useDelay: 8
-    range: 5
+    useDelay: 6
+    range: 6
 
 - type: entity
   id: GoliathTentacle
@@ -201,12 +201,12 @@
       Dead:
         Base: hivelord_dead
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2
-    baseSprintSpeed : 2.5
+    baseWalkSpeed : 2.25
+    baseSprintSpeed : 2.75
   - type: MobThresholds
     thresholds:
       0: Alive
-      75: Dead
+      100: Dead
   - type: MeleeWeapon
     damage:
       types:
@@ -234,9 +234,9 @@
       task: SimpleRangedHostileCompound
     blackboard:
       VisionRadius: !type:Single
-        3
+        4
       AggroVisionRadius: !type:Single
-        7
+        8
   - type: Butcherable
     spawned:
     - id: FoodHivelordRemains
@@ -286,11 +286,11 @@
       task: SimpleHostileCompound
     blackboard: # highly aggressive
       VisionRadius: !type:Single
-        12
+        15
       AggroVisionRadius: !type:Single
-        12
+        15
   - type: TimedDespawn
-    lifetime: 30
+    lifetime: 45
 
 - type: entity
   id: FoodHivelordRemains
