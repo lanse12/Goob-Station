@@ -4,7 +4,7 @@
   graph:
   - node: start
     edges:
-    - to: cloak
+    - to: goliath_cloak
       steps:
       - material: GoliathHide
         amount: 3
