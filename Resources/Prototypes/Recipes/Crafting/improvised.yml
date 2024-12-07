@@ -227,3 +227,16 @@
   icon:
     sprite: Objects/Tools/rolling_pin.rsi
     state: icon
+
+- type: construction
+  name: goliath cloak
+  id: ClothingNeckCloakGoliathCloak
+  graph: GoliathCloak
+  startNode: start
+  targetNode: GoliathCloak
+  category: construction-category-clothing
+  description: Blood-red cloak from some type of ancient beast. Seems to have retained some of it's protection.
+  icon:
+    sprite: Clothing/Neck/Cloaks/goliathcloak.rsi
+    state: icon
+  objectType: Item
