@@ -135,7 +135,7 @@
   id: ClothingNeckCloakGoliathCloak
   graph: GoliathCloak
   startNode: start
-  targetNode: cloak
+  targetNode: goliath_cloak
   category: construction-category-clothing
   description: Blood-red cloak from some type of ancient beast. Seems to have retained some of it's protection.
   icon: { sprite: Clothing/Neck/Cloaks/goliathcloak.rsi, state: icon }
