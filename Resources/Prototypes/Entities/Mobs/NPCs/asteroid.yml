@@ -50,8 +50,8 @@
       Dead:
         Base: goliath_dead
   - type: MovementSpeedModifier
-    baseWalkSpeed : 1.50
-    baseSprintSpeed : 1.50
+    baseWalkSpeed : 1.25
+    baseSprintSpeed : 1.25
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -74,9 +74,9 @@
       task: GoliathCompound
     blackboard:
       VisionRadius: !type:Single
-        6
+        7
       AggroVisionRadius: !type:Single
-        8
+        9
   - type: NPCUseActionOnTarget
     actionId: ActionGoliathTentacle
   - type: Tag
